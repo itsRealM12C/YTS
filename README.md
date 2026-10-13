@@ -1,11 +1,9 @@
 
-# Note
+# YTS
 
 It now uses Giphy, since Tenor API service got discontinued. But don't worry, it's revived now.
-
-# Reminder
-
-It probably has some bug (or feature i believe), like YouTube won't let you post comments with stickers.
+In case the GIFs aren't loading, go to chrome://settings/system, and turn off (not on) `Continue running background apps when Google Chrome is closed`, and
+probably reboot your computer or restart Chrome.
 
 # Desktop GIFs
 
