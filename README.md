@@ -3,7 +3,7 @@
 
 It now uses Giphy, since Tenor API service got discontinued. But don't worry, it's revived now.
 In case the GIFs aren't loading, go to chrome://settings/system, and turn off (not on) `Continue running background apps when Google Chrome is closed`, and
-probably reboot your computer or restart Chrome.
+ Reopen Chrome, and Load unpacked again.
 
 # Desktop GIFs
 
