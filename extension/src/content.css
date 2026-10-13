@@ -1,0 +1,51 @@
+/* The GIF button lives inside YouTube's comment box, so it is styled from the
+   page to match YouTube's round icon buttons. The picker has its own shadow root. */
+.gcfy-btn {
+  flex: none;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #0f0f0f;
+  cursor: pointer;
+}
+
+html[dark] .gcfy-btn {
+  color: #f1f1f1;
+}
+
+/* icons/icon.svg is used as a mask so it takes the button's text colour. */
+.gcfy-btn::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: currentColor;
+  -webkit-mask: url("chrome-extension://__MSG_@@extension_id__/icons/icon.svg") center / contain no-repeat;
+  mask: url("chrome-extension://__MSG_@@extension_id__/icons/icon.svg") center / contain no-repeat;
+}
+
+.gcfy-btn:hover,
+.gcfy-btn[aria-expanded="true"] {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+html[dark] .gcfy-btn:hover,
+html[dark] .gcfy-btn[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.gcfy-btn:focus-visible {
+  outline: 2px solid #065fd4;
+  outline-offset: 2px;
+}
+
+html[dark] .gcfy-btn:focus-visible {
+  outline-color: #3ea6ff;
+}

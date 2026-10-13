@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Desktop GIFs",
+  "version": "0.1.0",
+  "description": "Post GIPHY GIFs in YouTube comments and replies from desktop.",
+  "minimum_chrome_version": "111",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "host_permissions": ["https://api.giphy.com/*"],
+  "background": {
+    "service_worker": "src/sw.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/icon.svg"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["src/main.js"],
+      "world": "MAIN",
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
