@@ -1,7 +1,7 @@
 
 # Note
 
-It now uses Giphy, since Tenor API dervice got discontinued. But don't worry, it's revived now.
+It now uses Giphy, since Tenor API service got discontinued. But don't worry, it's revived now.
 
 # Reminder
 
