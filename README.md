@@ -1,3 +1,12 @@
+
+# Note
+
+It now uses Giphy, since Tenor API dervice got discontinued. But don't worry, it's revived now.
+
+# Reminder
+
+It probably has some bug (or feature i believe), like YouTube won't let you post comments with stickers.
+
 # Desktop GIFs
 
 <img src="extension/icons/icon-128.png" width="64" height="64" alt="" align="right">
